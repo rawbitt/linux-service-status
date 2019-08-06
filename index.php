@@ -53,23 +53,8 @@ foreach ($array as $key => $value) {
             <li class='".$state."-li' title='".$key."'><h3><span class='".$state."-fa'><i class='".$icon."'></i></span>".$key."</h3></li>			
         </ul>
     </li>";
-
- }
+}
 echo "</ul>";
-
-/*****
-// @TODO - Combine similar named services (matching [name]@...) into a nested list, like the following example:
-
-<li class ='hr-start'>
-	<ul><h2>Factorio</h2>		
-		<li class='".$factorio_origin_state."-li' title='".$factorio_origin."'><h3><span class='".$factorio_origin_state."-fa'><i class='".$factorio_origin_icon."'></i></span>Origin Map</h3></li>			
-		<li class='".$factorio_exp_state."-li' title='".$factorio_exp."'><h3><span class='".$factorio_exp_state."-fa'><i class='".$factorio_exp_icon."'></i></span>Experimental Map</h3></li>			
-		<li class='".$factorio_main_state."-li' title='".$factorio_main."'><h3><span class='".$factorio_main_state."-fa'><i class='".$factorio_main_icon."'></i></span>Main Map</h3></li>
-	</ul>
-</li>
-
-*****/
-
 ?>
 </div>
 </body>

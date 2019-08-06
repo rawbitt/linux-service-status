@@ -2,7 +2,7 @@
 
 This is designed to print the status of designated Ubuntu services on a simple webpage.
 
-![Screenshot](https://i.imgur.com/lXu98EU.png "Screenshot")
+![Screenshot](https://i.imgur.com/QL0rElJ.png "Screenshot")
 
 ## Requirements
 

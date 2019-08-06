@@ -1,0 +1,94 @@
+@media(min-width:60em){html{font-size: 100%}}
+	
+html {
+		
+}
+body {
+	margin: 0;
+	padding: 0 0 50px 0;
+	font-size: 16px;		
+}
+
+h1 {
+	color: #000;
+	font-family: 'PT Sans', serif;		
+	text-align: center;
+	font-weight: 700;
+	margin-top: 20px;
+	text-transform: uppercase;
+} 
+h2 {
+	margin-top: 0;
+	padding: 10px 0 0 20px;
+		
+	color: #000;
+}
+#container
+{
+	width: 100%;
+	max-width: 320px;		
+	margin:0 auto;
+	padding: 0px 0px 20px 0px;
+	font-family: 'PT Sans', Arial, sans serif;	
+	font-weight: 500;	
+	font-size: 100%;	
+	background-color: #e5e5e5;		
+	border-radius: 0 0 10px 10px;
+}	
+#last-cache
+{
+	width: 100%;
+	max-width: 280px;		
+	margin:0 auto;
+	padding: 20px;
+	font-family: 'PT Sans', Arial, sans serif;	
+	font-weight: 500;	
+	font-size: 100%;	
+	background-color: #c8c8c8;		
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+}	
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	padding: 0 20px;
+		
+}
+ul li ul li{
+	list-style: bullet;
+}
+li.hr{
+	border-top: 1px solid #c8c8c8;
+	margin-top: 20px;
+	padding: 10px 0;
+}
+li.hr-start{
+	padding: 10px 0;
+}
+.disabled-li
+{
+	color: #757575;
+}
+.error-li
+{
+	color: #8c0101;
+}
+.active-li
+{
+	color: #2b710f;
+}
+.disabled-fa
+{
+	color: white; padding: 10px; background-color: #757575; margin-right: 10px;
+}
+.error-fa
+{
+	color: white; padding: 10px; background-color: #8c0101; margin-right: 10px;
+}
+.active-fa
+{
+	color: white; padding: 10px; background-color: #2b710f; margin-right: 10px;
+}

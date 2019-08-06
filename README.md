@@ -34,7 +34,7 @@ ln -s /var/www/example.com/html/status/sh/create-cache.sh /usr/local/bin/create-
 */1 * * * * /usr/local/bin/create-cache.sh
 ```
 
-5. Set appropriate permissions:
+4. Set appropriate permissions:
 
     - the `/sh/` directory: `...`
     - `...`

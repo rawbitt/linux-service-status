@@ -1,0 +1,21 @@
+[Unit]
+Description=Trinity World Server
+After=network.target mysql.service
+
+[Service]
+WorkingDirectory=/home/trinity/server/bin/
+
+User=trinity
+Group=trinity
+
+Restart=always
+
+ExecStart=/usr/bin/screen -DmS wow-world ./worldserver
+
+ExecStop=/usr/bin/screen -p 0 -S wow-world -X eval 'stuff ".announce Shutting down in 10 seconds ... check https://robino.ddns.net/wow/ for server status"\015'
+ExecStop=/usr/bin/screen -p 0 -S wow-world -X eval 'stuff ".server shutdown 10"\015'
+ExecStop=/bin/sleep 10
+
+
+[Install]
+WantedBy=multi-user.target

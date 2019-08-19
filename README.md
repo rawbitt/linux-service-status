@@ -41,6 +41,20 @@ ln -s /var/www/example.com/html/status/sh/create-cache.sh /usr/local/bin/create-
     - the `/sh/` directory: `...`
     - `...`
 
+## Example Services
+
+See the `example-services` folder for example services. Place you service files in your system's `/etc/systemd/system` directory.
+
+Some helpful service commands:
+
+- Enable (autostart on system reboot): `sudo systemctl enable service-name` 
+- Enable with input variable: `sudo systemctl enable service-name@input` 
+- Disable (stop autostart): `sudo systemctl disable service-name`
+- Restart: `sudo systemctl restart service-name`
+- Start (run once): `sudo systemctl start service-name`
+- Stop: `sudo systemctl stop service-name`
+
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

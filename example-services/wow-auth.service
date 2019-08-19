@@ -1,0 +1,17 @@
+[Unit]
+Description=Trinity Auth Server
+After=network.target mysql.service
+
+[Service]
+WorkingDirectory=/home/trinity/server/bin/
+
+User=trinity
+Group=trinity
+
+Restart=always
+
+ExecStart=/usr/bin/screen -DmS wow-auth ./authserver
+ExecStop=/usr/bin/screen -p 0 -S wow-auth -X
+
+[Install]
+WantedBy=multi-user.target

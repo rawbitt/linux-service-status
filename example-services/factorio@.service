@@ -1,0 +1,21 @@
+[Unit]
+Description=Factorio Server: %i
+After=network.target
+
+[Service]
+WorkingDirectory=/home/factorio
+
+User=factorio
+Group=factorio
+
+Restart=always
+
+ExecStart=/usr/bin/screen -DmS factorio-%i /home/factorio/bin/x64/factorio --start-server /home/factorio/saves/%i.zip --server-settings /home/factorio/data/server-settings.json
+
+ExecStop=/usr/bin/screen -p 0 -S factorio-%i -X eval 'stuff "**** SERVER SHUTTING DOWN IN 5 SECONDS. SAVING ALL MAPS... ****"\015'
+ExecStop=/bin/sleep 5
+ExecStop=/usr/bin/screen -p 0 -S factorio-%i -X eval 'stuff "/quit"\015'
+
+
+[Install]
+WantedBy=multi-user.target

@@ -38,8 +38,8 @@ ln -s /var/www/example.com/html/status/sh/create-cache.sh /usr/local/bin/create-
 
 5. Set appropriate permissions:
 
-    - the `/sh/` directory: `...`
-    - `...`
+	- the `/sh/` directory: `...`
+	- `...`
 
 ## Example Services
 

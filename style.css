@@ -58,7 +58,7 @@ ul li{
 		
 }
 ul li ul li{
-	list-style: bullet;
+	list-style: none;
 }
 li.hr{
 	border-top: 1px solid #c8c8c8;

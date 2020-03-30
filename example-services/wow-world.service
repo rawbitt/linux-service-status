@@ -12,7 +12,7 @@ Restart=always
 
 ExecStart=/usr/bin/screen -DmS wow-world ./worldserver
 
-ExecStop=/usr/bin/screen -p 0 -S wow-world -X eval 'stuff ".announce Shutting down in 10 seconds ... check https://robino.ddns.net/wow/ for server status"\015'
+ExecStop=/usr/bin/screen -p 0 -S wow-world -X eval 'stuff ".announce Shutting down in 10 seconds ... check https://example.com/status for server status"\015'
 ExecStop=/usr/bin/screen -p 0 -S wow-world -X eval 'stuff ".server shutdown 10"\015'
 ExecStop=/bin/sleep 10
 
